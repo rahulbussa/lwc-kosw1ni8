@@ -1,0 +1,50 @@
+<template>
+  <div>
+    <div class="logo-container">
+      <img src={logo} alt="logo" class="app-logo" />
+    </div>
+    <div class="app-group">
+      <ul>
+        <li>
+          <div class="group yellow-bg">
+            <div class="initials">AL</div>
+          </div>
+        </li>
+        <li>
+          <div class="group blue-bg">
+            <div class="initials">RT</div>
+          </div>
+        </li>
+        <li>
+          <div class="group red-bg">
+            <div class="initials">Ad</div>
+          </div>
+        </li>
+      </ul>
+      <lightning-icon class="slds-align_absolute-center" icon-name="utility:chevrondown" size="x-small"
+        alternative-text="Event" title="Event">
+      </lightning-icon>
+    </div>
+    <div class="app-apps slds-m-top_medium">
+      <h3 class="slds-p-bottom_small">Apps</h3>
+      <ul>
+        <li>
+          <div class="app-wrapper github">
+            <img src={gitlink} alt="github" />
+          </div>
+        </li>
+        <li>
+          <div class="app-wrapper gdrive">
+            <img src={gdrivelink} alt="github" />
+          </div>
+        </li>
+        <li>
+          <div class="app-wrapper gmeet">
+            <img src={gmeetlink} alt="github" />
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</template>

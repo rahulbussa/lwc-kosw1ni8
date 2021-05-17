@@ -1,0 +1,85 @@
+.logo-container{
+  height: 20vh;
+}
+
+.app-logo{
+  height: 30px;
+  width: 30px;
+}
+
+.app-group{
+  height: 30vh;
+}
+
+.app-apps{
+  height: 40vh
+}
+
+.group {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.group .initials{
+  display: flex;
+  width: 15px;
+  height: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.app-apps h3{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #494949;
+}
+
+.app-apps .app-wrapper{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.app-wrapper img{
+  height: 15px;
+}
+
+.github {
+  background: #008EFF;
+}
+
+.gdrive {
+  background: #EBEBEB;
+}
+
+.yellow-bg{
+  background: #E1BE02;
+}
+
+.blue-bg{
+  background: #0477FF;
+}
+
+.red-bg{
+  background: #FF044F;
+}
+
+.gmeet{
+  background: #06E1FF;
+}
