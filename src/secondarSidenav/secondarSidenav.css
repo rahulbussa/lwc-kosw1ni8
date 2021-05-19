@@ -1,0 +1,16 @@
+.slds-avatar .cust-avatar {
+  height: 100%;
+}
+
+.cust-link{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #898989;
+}
+
+.cust-nav .slds-nav-vertical__action {
+  padding-bottom: 0.5rem;
+}

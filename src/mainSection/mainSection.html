@@ -1,0 +1,36 @@
+<template>
+  <h1>Main section</h1>
+  <div class="slds-p-around_medium main-section">
+    <ul class="slds-chat-list">
+      <template for:each={chat} for:item="c">
+        <!-- slds-chat-listitem_outbound -->
+        <li key={c.id} class="slds-chat-listitem ">
+          <div class="slds-chat-message">
+            <span aria-hidden="true" class="slds-avatar slds-avatar_circle slds-chat-avatar">
+            <img alt="Person name" class="chat-avatar-cust" src={c.avatar} title="Person name" />
+          <!-- <abbr class="slds-avatar__initials slds-avatar__initials_inverse" title="Taylor Watson-Rice">TW</abbr> -->
+        </span>
+            <div class="slds-chat-message__body cust-message">
+              <div class="slds-chat-message__meta" aria-label="said Andy Martinez at 4:59 PM">
+                <b>{c.name}</b>
+                <lightning-relative-date-time class="slds-m-left_small" value={c.timestamp}>
+                </lightning-relative-date-time>
+              </div>
+              <div class="slds-chat-message__text slds-p-left_small">
+                <span>{c.message}</span>
+              </div>
+              <!-- <div class="slds-chat-message__text slds-chat-message__text_inbound">
+                <span>{c.message}</span>
+              </div> -->
+            </div>
+          </div>
+        </li>
+      </template>
+    </ul>
+    <div class="current-editor-container">
+      <div class="current-editor slds-grid slds-grid_vertical slds-is-open">
+        <textarea></textarea>
+      </div>
+    </div>
+  </div>
+</template>

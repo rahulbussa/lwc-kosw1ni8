@@ -1,0 +1,38 @@
+
+.main-section{
+  background: #F9F9F9;
+}
+
+.chat-avatar-cust{
+  height: 100%;
+  width: 100%;
+}
+
+.cust-message{
+  padding: 5px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 10px rgba(158, 158, 158, 0.25);
+  border-radius: 0 10px 10px; 
+}
+
+.cust-message:before{
+  content: "";
+  position: absolute;
+}
+
+.slds-chat-listitem:nth-child(odd) {
+ justify-content: flex-start; 
+}
+
+.slds-chat-listitem:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.current-editor-container{
+  position: relative;
+}
+
+.current-editor{
+  position: absolute;
+  bottom:0;
+}

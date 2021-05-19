@@ -1,3 +1,68 @@
 <template>
-  <h1>secondary</h1>
+  <div class="slds-feed">
+    <ul class="slds-feed__list">
+      <li class="slds-feed__item">
+        <article class="slds-post">
+          <header class="slds-media slds-media_responsive slds-media_center">
+            <div class="slds-media__figure">
+              <a href="#" class="slds-avatar slds-avatar_circle slds-avatar_medium">
+                <img class="cust-avatar" alt="Jason Rodgers" src={avatar} title="Jason Rodgers avatar" />
+              </a>
+            </div>
+            <div class="slds-media__body">
+              <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                <p>
+                  <a href="#" title="Jason Rodgers">Jason Rogers</a> —
+                  <a href="#" title="Design Systems">Design Systems</a>
+                </p>
+                <lightning-button-menu variant="container" icon-size="small" alternative-text="Show menu">
+                  <lightning-menu-item value="MenuItemOne" label="Menu Item One"></lightning-menu-item>
+                  <lightning-menu-item value="MenuItemTwo" label="Menu Item Two"></lightning-menu-item>
+                  <lightning-menu-item value="MenuItemThree" label="Menu Item Three"></lightning-menu-item>
+                  <lightning-menu-item value="MenuItemFour" label="Menu Item Four"></lightning-menu-item>
+                </lightning-button-menu>
+              </div>
+              <p class="slds-text-body_small">
+                <a href="#" title="Click for single-item view of this post" class="slds-text-link_reset">Aman Gautam</a>
+              </p>
+            </div>
+          </header>
+        </article>
+      </li>
+      <li class="slds-p-horizontal_small">
+        <lightning-input label="search" variant="label-hidden" type="search"></lightning-input>
+      </li>
+      <li class="slds-p-top_large cust-nav">
+        <nav class="slds-nav-vertical" aria-label="Sub page">
+          <div class="slds-nav-vertical__section">
+            <div class="slds-nav-vertical__section">
+              <ul aria-describedby="folder-header">
+                <li class="slds-nav-vertical__item">
+                  <a href="#" class="slds-nav-vertical__action cust-link">
+                    <span class="slds-icon_container slds-icon-utility-open_folder slds-line-height_reset" title="Folder">
+                    <lightning-icon icon-name="action:email" size="x-small" class="slds-icon-text-default slds-m-right_x-small"></lightning-icon>
+                    <span class="slds-assistive-text">Folder</span>
+                    </span>All Unreads</a>
+                </li>
+                <li class="slds-nav-vertical__item">
+                  <a href="#" class="slds-nav-vertical__action cust-link">
+                    <span class="slds-icon_container slds-icon-utility-open_folder slds-line-height_reset" title="Folder">
+                    <lightning-icon icon-name="action:new_note" size="x-small" class="slds-icon-text-default slds-m-right_x-small"></lightning-icon>
+                    <span class="slds-assistive-text">Drafts</span>
+                    </span>Drafts</a>
+                </li>
+                <li class="slds-nav-vertical__item">
+                  <a href="#" class="slds-nav-vertical__action cust-link">
+                    <span class="slds-icon_container slds-icon-utility-open_folder slds-line-height_reset" title="Folder">
+                    <lightning-icon icon-name="action:share_post" size="x-small" class="slds-icon-text-default slds-m-right_x-small"></lightning-icon>
+                    <span class="slds-assistive-text">Mentions</span>
+                    </span>Mentions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </li>
+    </ul>
+  </div>
 </template>
